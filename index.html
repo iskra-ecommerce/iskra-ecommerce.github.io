@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iskra — Экосистема расширений для OpenCart 4</title>
+    <meta name="description" content="Iskra — бесплатные open-source расширения для OpenCart 4: логирование, миграции, бэкапы, 5 языков (RU UK KK BE RO). MIT license.">
+    <meta name="keywords" content="opencart 4, opencart extension, opencart module, opencart russian, opencart ukrainian, opencart kazakh, opencart cyrillic, iskra, ecommerce, cms">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 0; text-align: center; }
+        header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        header p { font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin: 0 auto 2rem; }
+        .btn { display: inline-block; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: 600; margin: 0 8px; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary { background: white; color: #667eea; }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .badges { margin-top: 2rem; }
+        .badges img { margin: 0 4px; }
+        section { padding: 60px 0; }
+        .extensions { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 40px; }
+        .card { background: white; border-radius: 12px; padding: 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: box-shadow 0.2s; }
+        .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+        .card h3 { font-size: 1.5rem; margin-bottom: 12px; color: #667eea; }
+        .card p { color: #666; margin-bottom: 20px; }
+        .card .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+        .card .tag { background: #f0f0f5; color: #667eea; padding: 4px 12px; border-radius: 20px; font-size: 0.875rem; }
+        .card a { color: #667eea; text-decoration: none; font-weight: 600; }
+        .features { background: white; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; margin-top: 40px; }
+        .feature { text-align: center; }
+        .feature .icon { font-size: 2.5rem; margin-bottom: 16px; }
+        .feature h4 { font-size: 1.25rem; margin-bottom: 8px; }
+        .feature p { color: #666; }
+        footer { background: #333; color: white; text-align: center; padding: 40px 0; }
+        footer a { color: #a5b4fc; }
+        h2 { text-align: center; font-size: 2rem; margin-bottom: 8px; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Iskra</h1>
+            <p>Экосистема open-source расширений для OpenCart 4. Логирование, миграции, бэкапы и 5 языков из коробки.</p>
+            <a href="https://github.com/iskra-ecommerce" class="btn btn-primary">GitHub</a>
+            <a href="#extensions" class="btn btn-secondary">Расширения</a>
+            <div class="badges">
+                <img src="https://img.shields.io/badge/PHP-8.1%2B-blue" alt="PHP 8.1+">
+                <img src="https://img.shields.io/badge/OpenCart-4.1%2B-green" alt="OpenCart 4.1+">
+                <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT">
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Возможности</h2>
+            <p class="subtitle">Всё, что нужно для запуска магазина на OpenCart 4 в СНГ</p>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="icon">📊</div>
+                    <h4>Логирование</h4>
+                    <p>Централизованные логи с уровнями, фильтрами и автоочисткой</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">🗄️</div>
+                    <h4>Миграции БД</h4>
+                    <p>Версионирование структуры базы данных с откатом</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">💾</div>
+                    <h4>Бэкапы</h4>
+                    <p>Автоматические и ручные SQL-дампы с restore из админки</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">🔍</div>
+                    <h4>Целостность</h4>
+                    <p>Проверка таблиц перед миграциями и операциями</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">🌐</div>
+                    <h4>5 языков</h4>
+                    <p>RU, UK, KK, BE, RO — нативные переводы админки и витрины</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">🔐</div>
+                    <h4>Регистрация</h4>
+                    <p>Современный мультиязычный модуль регистрации</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="extensions">
+        <div class="container">
+            <h2>Расширения</h2>
+            <p class="subtitle">Три модуля, которые работают вместе</p>
+            <div class="extensions">
+                <div class="card">
+                    <h3>Iskra Core</h3>
+                    <p>Фундаментальное расширение: логи, миграции, бэкапы, проверка целостности, поддержка кириллицы.</p>
+                    <div class="tags">
+                        <span class="tag">logging</span>
+                        <span class="tag">backup</span>
+                        <span class="tag">migrations</span>
+                        <span class="tag">cyrillic</span>
+                    </div>
+                    <a href="https://github.com/iskra-ecommerce/iskra_core">GitHub →</a>
+                </div>
+                <div class="card">
+                    <h3>Language Pack</h3>
+                    <p>Единый языковой пакет с 5 языками для админ-панели и витрины OpenCart 4.</p>
+                    <div class="tags">
+                        <span class="tag">RU</span>
+                        <span class="tag">UK</span>
+                        <span class="tag">KK</span>
+                        <span class="tag">BE</span>
+                        <span class="tag">RO</span>
+                    </div>
+                    <a href="https://github.com/iskra-ecommerce/iskra_language_pack">GitHub →</a>
+                </div>
+                <div class="card">
+                    <h3>Iskra Account</h3>
+                    <p>Современная регистрация с валидацией, масками телефонов и индикатором пароля.</p>
+                    <div class="tags">
+                        <span class="tag">registration</span>
+                        <span class="tag">multilanguage</span>
+                        <span class="tag">validation</span>
+                    </div>
+                    <a href="https://github.com/iskra-ecommerce/iskra_account">GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align:center">
+            <h2>Быстрый старт</h2>
+            <p class="subtitle">Установка за 2 минуты через Extension Installer</p>
+            <pre style="background:#1e1e1e;color:#d4d4d4;padding:20px;border-radius:8px;text-align:left;max-width:600px;margin:20px auto;overflow-x:auto"><code>1. Скачайте .ocmod.zip из GitHub Releases
+2. System → Extensions → Extension Installer → Upload
+3. Extensions → Modules → Install → Enable
+4. Готово!</code></pre>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Iskra Team · <a href="https://github.com/iskra-ecommerce">GitHub</a> · MIT License</p>
+            <p style="margin-top:8px;opacity:0.7">OpenCart 4 extensions for CIS markets</p>
+        </div>
+    </footer>
+</body>
+</html>
