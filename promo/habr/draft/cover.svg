@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="440" viewBox="0 0 780 440">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1a"/>
+      <stop offset="40%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,220,100,0.85)"/>
+      <stop offset="100%" stop-color="rgba(255,220,100,0)"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="780" height="440" fill="url(#bg)"/>
+  <rect width="780" height="440" fill="none" stroke="black" stroke-width="80" opacity="0.4" rx="40" ry="40"/>
+  <circle cx="60" cy="40" r="1.5" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="200" cy="80" r="1" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="350" cy="30" r="1.5" fill="rgba(255,255,255,0.25)"/>
+  <circle cx="500" cy="70" r="1" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="650" cy="50" r="1.5" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="720" cy="90" r="1" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="100" cy="120" r="1" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="400" cy="110" r="1.5" fill="rgba(255,255,255,0.2)"/>
+  <g opacity="0.15">
+    <line x1="0" y1="340" x2="780" y2="340" stroke="#2a4a6a" stroke-width="1"/>
+    <line x1="0" y1="350" x2="780" y2="350" stroke="#2a4a6a" stroke-width="1"/>
+    <line x1="0" y1="360" x2="780" y2="360" stroke="#2a4a6a" stroke-width="1"/>
+    <line x1="0" y1="370" x2="780" y2="370" stroke="#2a4a6a" stroke-width="1"/>
+    <line x1="0" y1="380" x2="780" y2="380" stroke="#2a4a6a" stroke-width="1"/>
+    <line x1="0" y1="390" x2="780" y2="390" stroke="#2a4a6a" stroke-width="1"/>
+    <line x1="0" y1="400" x2="780" y2="400" stroke="#2a4a6a" stroke-width="1"/>
+  </g>
+  <path d="M80 390 L120 390 L140 370 L60 370 Z" fill="rgba(40,40,40,0.5)"/>
+  <line x1="100" y1="370" x2="100" y2="330" stroke="rgba(60,60,60,0.5)" stroke-width="2"/>
+  <polygon points="100,330 115,355 100,355" fill="rgba(40,40,40,0.4)"/>
+  <rect x="680" y="310" width="20" height="90" fill="#1a1a1a"/>
+  <rect x="678" y="305" width="24" height="8" fill="#2a2a2a"/>
+  <polygon points="690,275 710,305 670,305" fill="url(#gold)"/>
+  <polygon points="690,290 850,260 850,320" fill="url(#beam)" filter="url(#glow)"/>
+  <path d="M0 410 Q40 400, 80 410 T160 410 T240 410 T320 410 T400 410 T480 410 T560 410 T640 410 T720 410 T800 410" fill="none" stroke="rgba(180,160,120,0.08)" stroke-width="1"/>
+  <path d="M0 420 Q40 410, 80 420 T160 420 T240 420 T320 420 T400 420 T480 420 T560 420 T640 420 T720 420 T800 420" fill="none" stroke="rgba(180,160,120,0.06)" stroke-width="1"/>
+  <text x="390" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#a09070" text-anchor="middle" letter-spacing="6" font-weight="normal">ЭКОСИСТЕМА РАСШИРЕНИЙ</text>
+  <line x1="330" y1="190" x2="450" y2="190" stroke="url(#gold)" stroke-width="1.5" opacity="0.8"/>
+  <text x="390" y="245" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#e8dcc8" text-anchor="middle" letter-spacing="8" font-weight="bold">ИСКРА</text>
+  <line x1="330" y1="265" x2="450" y2="265" stroke="url(#gold)" stroke-width="1.5" opacity="0.8"/>
+  <text x="390" y="295" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6a5a40" text-anchor="middle" letter-spacing="3">OpenCart 4 · Логи · Миграции · Бэкапы · 5 языков</text>
+  <text x="390" y="415" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#8a7a60" text-anchor="middle" letter-spacing="4">ISKRA TEAM · MIT LICENSE</text>
+</svg>
