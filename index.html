@@ -45,7 +45,11 @@
         .feature p { color: #666; }
         footer { background: #333; color: white; text-align: center; padding: 40px 0; }
         footer a { color: #a5b4fc; }
+        footer p.note { margin-top: 8px; opacity: 0.7; }
         .faq { background: white; }
+        .quickstart { text-align: center; }
+        .howto-step { display: none; }
+        pre { background: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; text-align: left; max-width: 600px; margin: 20px auto; overflow-x: auto; }
         .faq-item { max-width: 800px; margin: 0 auto 20px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
         .faq-item h3 { font-size: 1.15rem; color: #667eea; margin-bottom: 8px; }
         .faq-item p { color: #555; }
@@ -61,8 +65,10 @@
         <div class="container">
             <h1>Искра</h1>
             <p>Экосистема open-source расширений для OpenCart 4. Для тех, кто устал ночевать у сервера.</p>
-            <a href="https://github.com/iskra-ecommerce" class="btn btn-primary">GitHub</a>
-            <a href="#extensions" class="btn btn-secondary">Расширения</a>
+            <nav>
+                <a href="https://github.com/iskra-ecommerce" class="btn btn-primary">GitHub</a>
+                <a href="#extensions" class="btn btn-secondary">Расширения</a>
+            </nav>
             <div class="badges">
                 <img src="https://img.shields.io/badge/PHP-8.1%2B-blue" alt="PHP 8.1+">
                 <img src="https://img.shields.io/badge/OpenCart-4.1%2B-green" alt="OpenCart 4.1+">
@@ -126,7 +132,7 @@
             <h2>Расширения</h2>
             <p class="subtitle">Три модуля. Каждый — со своим характером.</p>
             <div class="extensions">
-                <div class="card">
+                <article class="card">
                     <h3>Iskra Core</h3>
                     <p>Фундамент. Держит магазин за руку: логи, миграции, бэкапы, проверка целостности, кириллица. Спит за вас.</p>
                     <div class="tags">
@@ -136,8 +142,8 @@
                         <span class="tag">cyrillic</span>
                     </div>
                     <a href="https://github.com/iskra-ecommerce/iskra_core">GitHub →</a>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <h3>Language Pack</h3>
                     <p>Пять языков из коробки. Не машинный перевод — живой текст. Для админки и витрины. Установка за два клика.</p>
                     <div class="tags">
@@ -148,8 +154,8 @@
                         <span class="tag">RO</span>
                     </div>
                     <a href="https://github.com/iskra-ecommerce/iskra_language_pack">GitHub →</a>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <h3>Iskra Account</h3>
                     <p>Современная регистрация. Валидация без мучений, маски телефонов, индикатор пароля. Не бесит пользователя.</p>
                     <div class="tags">
@@ -158,28 +164,28 @@
                         <span class="tag">validation</span>
                     </div>
                     <a href="https://github.com/iskra-ecommerce/iskra_account">GitHub →</a>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <section itemscope itemtype="https://schema.org/HowTo">
-        <div class="container" style="text-align:center">
+    <section class="quickstart" itemscope itemtype="https://schema.org/HowTo">
+        <div class="container">
             <h2 itemprop="name">Быстрый старт</h2>
             <p class="subtitle">Установка за 2 минуты через Extension Installer</p>
-            <div itemscope itemprop="step" itemtype="https://schema.org/HowToStep" style="display:none">
+            <div class="howto-step" itemscope itemprop="step" itemtype="https://schema.org/HowToStep">
                 <h3 itemprop="name">Скачайте архив</h3>
                 <p itemprop="text">Перейдите на GitHub Releases и скачайте .ocmod.zip для нужного модуля.</p>
             </div>
-            <div itemscope itemprop="step" itemtype="https://schema.org/HowToStep" style="display:none">
+            <div class="howto-step" itemscope itemprop="step" itemtype="https://schema.org/HowToStep">
                 <h3 itemprop="name">Загрузите в админку</h3>
                 <p itemprop="text">Откройте System → Extensions → Extension Installer и загрузите .ocmod.zip.</p>
             </div>
-            <div itemscope itemprop="step" itemtype="https://schema.org/HowToStep" style="display:none">
+            <div class="howto-step" itemscope itemprop="step" itemtype="https://schema.org/HowToStep">
                 <h3 itemprop="name">Активируйте модуль</h3>
                 <p itemprop="text">Перейдите в Extensions → Modules, найдите Iskra, нажмите Install и Enable.</p>
             </div>
-            <pre style="background:#1e1e1e;color:#d4d4d4;padding:20px;border-radius:8px;text-align:left;max-width:600px;margin:20px auto;overflow-x:auto"><code>1. Скачайте .ocmod.zip из GitHub Releases
+            <pre><code>1. Скачайте .ocmod.zip из GitHub Releases
 2. System → Extensions → Extension Installer → Upload
 3. Extensions → Modules → Install → Enable
 4. Идите спать — оно работает</code></pre>
@@ -226,7 +232,7 @@
     <footer>
         <div class="container">
             <p>Iskra Team · <a href="https://github.com/iskra-ecommerce">GitHub</a> · MIT License</p>
-            <p style="margin-top:8px;opacity:0.7">OpenCart 4 extensions for CIS markets</p>
+            <p class="note">OpenCart 4 extensions for CIS markets</p>
         </div>
     </footer>
 </body>
