@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="440" viewBox="0 0 780 440">
+  <defs>
+    <linearGradient id="bgB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="100%" stop-color="#203a43"/>
+    </linearGradient>
+    <linearGradient id="coral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7e5f"/>
+      <stop offset="100%" stop-color="#feb47b"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c9ff"/>
+      <stop offset="100%" stop-color="#92fe9d"/>
+    </linearGradient>
+  </defs>
+  <rect width="780" height="440" fill="url(#bgB)"/>
+  <g transform="translate(120, 280) scale(0.8)">
+    <path d="M0 40 L60 10 L120 40 L60 70 Z" fill="url(#coral)" opacity="0.9"/>
+    <path d="M0 40 L60 70 L60 130 L0 100 Z" fill="url(#coral)" opacity="0.6"/>
+    <path d="M60 70 L120 40 L120 100 L60 130 Z" fill="url(#coral)" opacity="0.7"/>
+  </g>
+  <g transform="translate(220, 240) scale(0.9)">
+    <path d="M0 40 L60 10 L120 40 L60 70 Z" fill="url(#teal)" opacity="0.9"/>
+    <path d="M0 40 L60 70 L60 130 L0 100 Z" fill="url(#teal)" opacity="0.6"/>
+    <path d="M60 70 L120 40 L120 100 L60 130 Z" fill="url(#teal)" opacity="0.7"/>
+  </g>
+  <g transform="translate(340, 200) scale(1.0)">
+    <path d="M0 40 L60 10 L120 40 L60 70 Z" fill="url(#coral)" opacity="0.9"/>
+    <path d="M0 40 L60 70 L60 130 L0 100 Z" fill="url(#coral)" opacity="0.6"/>
+    <path d="M60 70 L120 40 L120 100 L60 130 Z" fill="url(#coral)" opacity="0.7"/>
+  </g>
+  <g transform="translate(480, 160) scale(1.1)">
+    <path d="M0 40 L60 10 L120 40 L60 70 Z" fill="url(#teal)" opacity="0.9"/>
+    <path d="M0 40 L60 70 L60 130 L0 100 Z" fill="url(#teal)" opacity="0.6"/>
+    <path d="M60 70 L120 40 L120 100 L60 130 Z" fill="url(#teal)" opacity="0.7"/>
+  </g>
+  <g stroke="rgba(255,255,255,0.15)" stroke-width="1.5" fill="none">
+    <line x1="180" y1="310" x2="300" y2="270"/>
+    <line x1="300" y1="270" x2="420" y2="230"/>
+    <line x1="420" y1="230" x2="560" y2="190"/>
+  </g>
+  <text x="390" y="380" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="56" fill="#ffffff" text-anchor="middle" letter-spacing="10" font-weight="800">ИСКРА</text>
+  <text x="390" y="405" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#92fe9d" text-anchor="middle" letter-spacing="3" font-weight="600">OPENCART 4 ECOSYSTEM</text>
+</svg>

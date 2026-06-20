@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="440" viewBox="0 0 780 440">
+  <defs>
+    <linearGradient id="bgD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="50%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#24243e"/>
+    </linearGradient>
+    <linearGradient id="goldD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#ff8c00"/>
+    </linearGradient>
+    <linearGradient id="sparkD" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="rgba(255,215,0,0)"/>
+    </linearGradient>
+    <filter id="glowD"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="heavyGlowD"><feGaussianBlur stdDeviation="20" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="780" height="440" fill="url(#bgD)"/>
+  <path d="M200 220 Q280 120, 390 220 T580 220" fill="none" stroke="url(#sparkD)" stroke-width="3" filter="url(#glowD)" opacity="0.9"/>
+  <path d="M200 220 Q280 120, 390 220 T580 220" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="390" cy="220" r="60" fill="url(#goldD)" opacity="0.2" filter="url(#heavyGlowD)"/>
+  <circle cx="390" cy="220" r="25" fill="url(#goldD)" opacity="0.5" filter="url(#glowD)"/>
+  <circle cx="390" cy="220" r="8" fill="#ffffff"/>
+  <line x1="0" y1="0" x2="200" y2="200" stroke="rgba(255,215,0,0.1)" stroke-width="1"/>
+  <line x1="580" y1="220" x2="780" y2="440" stroke="rgba(255,215,0,0.1)" stroke-width="1"/>
+  <text x="390" y="310" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="84" fill="#ffffff" text-anchor="middle" letter-spacing="14" font-weight="900">ИСКРА</text>
+  <text x="390" y="345" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#ffd700" text-anchor="middle" letter-spacing="6" font-weight="700">OPENCART 4 ECOSYSTEM</text>
+  <text x="390" y="370" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.5)" text-anchor="middle" letter-spacing="2">LOGS · MIGRATIONS · BACKUPS · 5 LANGUAGES</text>
+  <line x1="340" y1="390" x2="440" y2="390" stroke="url(#goldD)" stroke-width="2" opacity="0.8"/>
+</svg>
